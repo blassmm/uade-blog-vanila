@@ -17,6 +17,47 @@ header {
   background: #35424a;
   color: #ffffff;
   text-align: center;
+  position: relative;
+}
+
+.wrapper {
+  border: 2px solid red;
+}
+
+/* ----------------------------------------------------------- */
+nav {
+  position: relative;
+  /* Mantenemos las container queries pero añadimos media queries como respaldo */
+  container-type: inline-size;
+  container-name: nav-container;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(53, 66, 74, 0.8);
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hamburger-menu span {
+  width: 100%;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
 }
 
 nav ul {
@@ -37,6 +78,107 @@ nav ul li a {
 }
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+/* Usando media queries estándar como respaldo para asegurar compatibilidad */
+@media screen and (max-width: 600px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background-color: #35424a;
+    padding: 60px 0;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 1.1rem;
+  }
+
+  .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+}
+
+/* Mantenemos la container query pero aseguramos que los estilos sean los mismos */
+@container nav-container (width < 600px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background-color: #35424a;
+    padding: 60px 0;
+    transition: right 0.3s ease-in-out;
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 1.1rem;
+  }
+
+  .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
 }
 /* ----------------------------------------------------------- */
 

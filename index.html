@@ -4,45 +4,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blas</title>
     <link rel="stylesheet" href="linktree-styles.css" />
+    <link rel="stylesheet" href="nav/nav.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <title>Mi Portfolio</title>
   </head>
 
   <body>
-    <div class="profile-container">
-      <img src="perfil.jpeg" alt="Foto de perfil" class="profile-image" />
-      <h1 class="username">@blasmontanari</h1>
-      <p class="bio">Travel</p>
-    </div>
+    <header>
+      <div class="nav">
+        <a href="#home"
+          ><p class="titleNav_mobile">
+            <strong class="ar">AR</strong><strong class="co">CO</strong>
+          </p>
+        </a>
 
-    <div class="links-container">
-      <a href="#" class="link-item">
-        <span class="link-text">Identikit</span>
-      </a>
+        <div class="toggle" id="navToggle">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
 
-      <a href="/blog.html" class="link-item">
-        <span class="link-text">Blog</span>
-      </a>
-    </div>
+        <div class="circle_nav"></div>
 
-    <div class="social-icons">
-      <a href="#" class="social-icon">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="#" class="social-icon">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#" class="social-icon">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" class="social-icon">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+        <ul class="list_nav_diss">
+          <a class="list_link_nav" href="index.html"
+            ><li class="list_mobile">Inicio</li></a
+          >
+          <a class="list_link_nav" href="blog.html"
+            ><li class="list_mobile">Sobre mi</li></a
+          >
+          <a class="list_link_nav" href="blog.html"
+            ><li class="list_mobile">Publicaciones</li></a
+          >
+          <a class="list_link_nav" href="contact.html"
+            ><li class="list_mobile">Contact</li></a
+          >
+        </ul>
+      </div>
+    </header>
 
+    <main>
+      <div class="container">
+        <div class="profile">
+          <img src="perfil.jpeg" alt="Foto de perfil" />
+          <h1>Blas Montanari</h1>
+          <p>Blogger | Viajero | Fotógrafo</p>
+        </div>
+
+        <div class="links">
+          <a href="blog.html" class="link-item">
+            <i class="fas fa-book-open"></i>
+            <span>Mi Blog de Viajes</span>
+          </a>
+          <a href="https://instagram.com" class="link-item">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://twitter.com" class="link-item">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a href="https://facebook.com" class="link-item">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="mailto:contacto@example.com" class="link-item">
+            <i class="fas fa-envelope"></i>
+            <span>Contacto</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Blas Montanari</p>
+    </footer>
+    <script src="script-blog.js"></script>
   </body>
 </html>

@@ -4,176 +4,203 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="blog-styles.css" />
+    <link rel="stylesheet" href="nav/nav.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <title>Blog</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Sobre mi</a></li>
-          <li><a href="contact.html">Publicaciones</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <div class="nav">
+        <a href="#home"
+          ><p class="titleNav_mobile">
+            <strong class="ar">AR</strong><strong class="co">CO</strong>
+          </p></a
+        >
+
+        <div class="toggle" id="navToggle">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+
+        <div class="circle_nav"></div>
+
+        <ul class="list_nav_diss">
+          <a class="list_link_nav" href="index.html"
+            ><li class="list_mobile">Inicio</li></a
+          >
+          <a class="list_link_nav" href="blog.html"
+            ><li class="list_mobile">Sobre mi</li></a
+          >
+          <a class="list_link_nav" href="contact.html"
+            ><li class="list_mobile">Publicaciones</li></a
+          >
+          <a class="list_link_nav" href="contact.html"
+            ><li class="list_mobile">Contact</li></a
+          >
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
-      <h1 class="blog-title">
-        Descubriendo el Mundo: Opiniones y Experiencias de Viaje
-      </h1>
       <section>
-        <div class="posts-container">
-          <article class="post">
-            <h1>Blas</h1>
-            <h1>Test</h1>
-            <h1>Dominicana</h1>
-            <div class="image-container">
-              <img src="dominicana.jpg" alt="República Dominicana" />
-              <div class="post-text">
-                <p class="text-preview">
-                  Visitar República Dominicana te ofrece una experiencia
-                  caribeña inolvidable. Sus playas de arena blanca y aguas
-                  turquesas en Punta Cana y Bávaro te brindarán el descanso
-                  perfecto...
-                </p>
-                <p class="text-complete">
-                  Visitar República Dominicana te ofrece una experiencia
-                  caribeña inolvidable. Sus playas de arena blanca y aguas
-                  turquesas en Punta Cana y Bávaro te brindarán el descanso
-                  perfecto. La calidez de su gente te hará sentir bienvenido
-                  desde el primer momento. Podrás descubrir su rica historia
-                  colonial en Santo Domingo, la ciudad más antigua de América, y
-                  deleitarte con su gastronomía local llena de sabores
-                  tropicales. Los amantes de la naturaleza encontrarán paraísos
-                  como Los Haitises o el Valle del Tetero. ¡Una isla que cautiva
-                  todos los sentidos!
-                </p>
-                <button class="read-more-btn">Leer más</button>
-              </div>
-            </div>
-          </article>
+        <div class="wrapper">
+          <h1 class="blog-title">
+            Descubriendo el Mundo: Opiniones y Experiencias de Viaje
+          </h1>
 
-          <article class="post">
-            <h1>Cuba</h1>
-            <div class="image-container">
-              <img src="cuba.jfif" alt="Cuba" />
-              <div class="post-text">
-                <p class="text-preview">
-                  Cuba merece una visita por su extraordinaria combinación de
-                  historia, cultura y belleza natural. La Habana te transportará
-                  al pasado con sus coloridos autos clásicos...
-                </p>
-                <p class="text-complete">
-                  Cuba merece una visita por su extraordinaria combinación de
-                  historia, cultura y belleza natural. La Habana te transportará
-                  al pasado con sus coloridos autos clásicos y su arquitectura
-                  colonial perfectamente preservada. La música cubana, siempre
-                  presente en sus calles, te invitará a bailar al ritmo de la
-                  salsa y el son. Sus playas vírgenes como Varadero ofrecen un
-                  paraíso de arenas blancas. La amabilidad de los cubanos, su
-                  sistema único y su rica historia revolucionaria te
-                  proporcionarán una perspectiva diferente del mundo. ¡Una isla
-                  que te cambiará para siempre!
-                </p>
-                <button class="read-more-btn">Leer más</button>
+          <div class="posts-container">
+            <article class="post">
+              <h1>Dominicana</h1>
+              <div class="image-container">
+                <img src="dominicana.jpg" alt="República Dominicana" />
+                <div class="post-text">
+                  <p class="text-preview">
+                    Visitar República Dominicana te ofrece una experiencia
+                    caribeña inolvidable. Sus playas de arena blanca y aguas
+                    turquesas en Punta Cana y Bávaro te brindarán el descanso
+                    perfecto...
+                  </p>
+                  <p class="text-complete">
+                    Visitar República Dominicana te ofrece una experiencia
+                    caribeña inolvidable. Sus playas de arena blanca y aguas
+                    turquesas en Punta Cana y Bávaro te brindarán el descanso
+                    perfecto. La calidez de su gente te hará sentir bienvenido
+                    desde el primer momento. Podrás descubrir su rica historia
+                    colonial en Santo Domingo, la ciudad más antigua de América,
+                    y deleitarte con su gastronomía local llena de sabores
+                    tropicales. Los amantes de la naturaleza encontrarán
+                    paraísos como Los Haitises o el Valle del Tetero. ¡Una isla
+                    que cautiva todos los sentidos!
+                  </p>
+                  <button class="read-more-btn">Leer más</button>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="post">
-            <h1>Bahamas</h1>
-            <div class="image-container">
-              <img src="bahamas.jpg" alt="Bahamas" />
-              <div class="post-text">
-                <p class="text-preview">
-                  Visitar Bahamas es sumergirse en un auténtico paraíso
-                  terrenal. Sus aguas cristalinas de tonos turquesas imposibles
-                  te invitarán a explorar uno de los ecosistemas marinos más
-                  espectaculares...
-                </p>
-                <p class="text-complete">
-                  Visitar Bahamas es sumergirse en un auténtico paraíso
-                  terrenal. Sus aguas cristalinas de tonos turquesas imposibles
-                  te invitarán a explorar uno de los ecosistemas marinos más
-                  espectaculares del planeta. La experiencia única de nadar con
-                  cerdos en Big Major Cay o alimentar a las iguanas en las
-                  playas desiertas será inolvidable. Sus más de 700 islas
-                  ofrecen tanto tranquilidad en calas apartadas como el lujo de
-                  resorts en Nassau. El contraste entre la arena rosada de
-                  Harbour Island y el intenso azul del océano creará postales
-                  que guardarás para siempre en tu memoria. ¡Un destino que
-                  supera cualquier expectativa!
-                </p>
-                <button class="read-more-btn">Leer más</button>
+            <article class="post">
+              <h1>Cuba</h1>
+              <div class="image-container">
+                <img src="cuba.jfif" alt="Cuba" />
+                <div class="post-text">
+                  <p class="text-preview">
+                    Cuba merece una visita por su extraordinaria combinación de
+                    historia, cultura y belleza natural. La Habana te
+                    transportará al pasado con sus coloridos autos clásicos...
+                  </p>
+                  <p class="text-complete">
+                    Cuba merece una visita por su extraordinaria combinación de
+                    historia, cultura y belleza natural. La Habana te
+                    transportará al pasado con sus coloridos autos clásicos y su
+                    arquitectura colonial perfectamente preservada. La música
+                    cubana, siempre presente en sus calles, te invitará a bailar
+                    al ritmo de la salsa y el son. Sus playas vírgenes como
+                    Varadero ofrecen un paraíso de arenas blancas. La amabilidad
+                    de los cubanos, su sistema único y su rica historia
+                    revolucionaria te proporcionarán una perspectiva diferente
+                    del mundo. ¡Una isla que te cambiará para siempre!
+                  </p>
+                  <button class="read-more-btn">Leer más</button>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="post">
-            <h1>Brasil</h1>
-            <div class="image-container">
-              <img src="brasil.jpg" alt="Brasil" />
-              <div class="post-text">
-                <p class="text-preview">
-                  Brasil te cautivará con su diversidad y energía incomparables.
-                  Río de Janeiro te enamorará con sus icónicas vistas desde el
-                  Cristo Redentor y su vibrante ambiente en playas como
-                  Copacabana...
-                </p>
-                <p class="text-complete">
-                  Brasil te cautivará con su diversidad y energía incomparables.
-                  Río de Janeiro te enamorará con sus icónicas vistas desde el
-                  Cristo Redentor y su vibrante ambiente en playas como
-                  Copacabana e Ipanema. La majestuosidad de las Cataratas de
-                  Iguazú te dejará sin aliento, mientras que la biodiversidad
-                  del Amazonas te conectará con la naturaleza en su estado más
-                  puro. Brasil es un festín cultural donde la samba, la capoeira
-                  y el carnaval expresan la pasión de su gente. La exquisita
-                  gastronomía brasileña, desde la feijoada hasta el churrasco,
-                  deleitará tu paladar. Sus ciudades coloniales como Salvador de
-                  Bahía te transportarán a otra época. ¡Un país donde cada
-                  región ofrece una nueva aventura por descubrir!
-                </p>
-                <button class="read-more-btn">Leer más</button>
+            <article class="post">
+              <h1>Bahamas</h1>
+              <div class="image-container">
+                <img src="bahamas.jpg" alt="Bahamas" />
+                <div class="post-text">
+                  <p class="text-preview">
+                    Visitar Bahamas es sumergirse en un auténtico paraíso
+                    terrenal. Sus aguas cristalinas de tonos turquesas
+                    imposibles te invitarán a explorar uno de los ecosistemas
+                    marinos más espectaculares...
+                  </p>
+                  <p class="text-complete">
+                    Visitar Bahamas es sumergirse en un auténtico paraíso
+                    terrenal. Sus aguas cristalinas de tonos turquesas
+                    imposibles te invitarán a explorar uno de los ecosistemas
+                    marinos más espectaculares del planeta. La experiencia única
+                    de nadar con cerdos en Big Major Cay o alimentar a las
+                    iguanas en las playas desiertas será inolvidable. Sus más de
+                    700 islas ofrecen tanto tranquilidad en calas apartadas como
+                    el lujo de resorts en Nassau. El contraste entre la arena
+                    rosada de Harbour Island y el intenso azul del océano creará
+                    postales que guardarás para siempre en tu memoria. ¡Un
+                    destino que supera cualquier expectativa!
+                  </p>
+                  <button class="read-more-btn">Leer más</button>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="post">
-            <h1>Aruba</h1>
-            <div class="image-container">
-              <img src="aruba.jpg" alt="Aruba" />
-              <div class="post-text">
-                <p class="text-preview">
-                  Aruba es un pequeño paraíso en el sur del Caribe que te
-                  conquistará con sus playas de ensueño y su clima perfecto
-                  durante todo el año. Conocida como "Una Isla Feliz", ofrece
-                  aguas cristalinas color turquesa y arenas blancas...
-                </p>
-                <p class="text-complete">
-                  Aruba es un pequeño paraíso en el sur del Caribe que te
-                  conquistará con sus playas de ensueño y su clima perfecto
-                  durante todo el año. Conocida como "Una Isla Feliz", ofrece
-                  aguas cristalinas color turquesa y arenas blancas como Eagle
-                  Beach y Palm Beach. Su ambiente multicultural combina
-                  influencias holandesas, caribeñas y latinoamericanas, creando
-                  una atmósfera acogedora y sofisticada. Los amantes de la
-                  naturaleza pueden explorar el Parque Nacional Arikok con sus
-                  formaciones rocosas, cuevas con pinturas indígenas y la
-                  piscina natural. La gastronomía en Aruba es excepcional, con
-                  restaurantes de clase mundial y experiencias culinarias frente
-                  al mar. Con su seguridad, infraestructura turística de calidad
-                  y la amabilidad de sus habitantes, Aruba garantiza unas
-                  vacaciones inolvidables en el Caribe.
-                </p>
-                <button class="read-more-btn">Leer más</button>
+            <article class="post">
+              <h1>Brasil</h1>
+              <div class="image-container">
+                <img src="brasil.jpg" alt="Brasil" />
+                <div class="post-text">
+                  <p class="text-preview">
+                    Brasil te cautivará con su diversidad y energía
+                    incomparables. Río de Janeiro te enamorará con sus icónicas
+                    vistas desde el Cristo Redentor y su vibrante ambiente en
+                    playas como Copacabana...
+                  </p>
+                  <p class="text-complete">
+                    Brasil te cautivará con su diversidad y energía
+                    incomparables. Río de Janeiro te enamorará con sus icónicas
+                    vistas desde el Cristo Redentor y su vibrante ambiente en
+                    playas como Copacabana e Ipanema. La majestuosidad de las
+                    Cataratas de Iguazú te dejará sin aliento, mientras que la
+                    biodiversidad del Amazonas te conectará con la naturaleza en
+                    su estado más puro. Brasil es un festín cultural donde la
+                    samba, la capoeira y el carnaval expresan la pasión de su
+                    gente. La exquisita gastronomía brasileña, desde la feijoada
+                    hasta el churrasco, deleitará tu paladar. Sus ciudades
+                    coloniales como Salvador de Bahía te transportarán a otra
+                    época. ¡Un país donde cada región ofrece una nueva aventura
+                    por descubrir!
+                  </p>
+                  <button class="read-more-btn">Leer más</button>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+
+            <article class="post">
+              <h1>Aruba</h1>
+              <div class="image-container">
+                <img src="aruba.jpg" alt="Aruba" />
+                <div class="post-text">
+                  <p class="text-preview">
+                    Aruba es un pequeño paraíso en el sur del Caribe que te
+                    conquistará con sus playas de ensueño y su clima perfecto
+                    durante todo el año. Conocida como "Una Isla Feliz", ofrece
+                    aguas cristalinas color turquesa y arenas blancas...
+                  </p>
+                  <p class="text-complete">
+                    Aruba es un pequeño paraíso en el sur del Caribe que te
+                    conquistará con sus playas de ensueño y su clima perfecto
+                    durante todo el año. Conocida como "Una Isla Feliz", ofrece
+                    aguas cristalinas color turquesa y arenas blancas como Eagle
+                    Beach y Palm Beach. Su ambiente multicultural combina
+                    influencias holandesas, caribeñas y latinoamericanas,
+                    creando una atmósfera acogedora y sofisticada. Los amantes
+                    de la naturaleza pueden explorar el Parque Nacional Arikok
+                    con sus formaciones rocosas, cuevas con pinturas indígenas y
+                    la piscina natural. La gastronomía en Aruba es excepcional,
+                    con restaurantes de clase mundial y experiencias culinarias
+                    frente al mar. Con su seguridad, infraestructura turística
+                    de calidad y la amabilidad de sus habitantes, Aruba
+                    garantiza unas vacaciones inolvidables en el Caribe.
+                  </p>
+                  <button class="read-more-btn">Leer más</button>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
