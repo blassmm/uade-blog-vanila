@@ -1,19 +1,12 @@
-// Funcionalidad básica para el blog
 document.addEventListener("DOMContentLoaded", function () {
-
-  // Seleccionar todos los botones "Leer más"
   const readMoreButtons = document.querySelectorAll(".read-more-btn");
 
-  // Añadir evento de clic a cada botón
   readMoreButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      // Obtener el contenedor de texto padre
       const postText = this.parentElement;
 
-      // Alternar la clase 'expanded'
       postText.classList.toggle("expanded");
 
-      // Cambiar el texto del botón según el estado
       if (postText.classList.contains("expanded")) {
         this.textContent = "Leer menos";
       } else {
@@ -33,5 +26,29 @@ document.addEventListener("DOMContentLoaded", function () {
         postText.style.transform = "translateY(0)";
       }
     });
+  });
+
+  // Animaciones con GSAP
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animación para el título
+  gsap.from(".blog-title", {
+    opacity: 0,
+    y: -30,
+    duration: 1,
+    ease: "power3.out",
+  });
+
+  // Animación para los posts
+  gsap.from(".post", {
+    opacity: 0,
+    y: 50,
+    stagger: 0.2,
+    duration: 0.8,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".posts-container",
+      start: "top 80%",
+    },
   });
 });

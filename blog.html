@@ -4,34 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="blog-styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <title>Blog</title>
   </head>
   <body>
+    <audio id="clickSound">
+      <source src="/sounds/click-hd.mp3" type="audio/mpeg" />
+    </audio>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Sobre mi</a></li>
-          <li><a href="contact.html">Publicaciones</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" class="navbar-logo">
+            BLO<span class="blue">G</span>
+          </a>
+          <div class="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">Inicio</a>
+            </li>
+            <li class="navbar-item">
+              <a href="blog.html" class="navbar-link">Publicaciones</a>
+            </li>
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+      <div class="overlay"></div>
     </header>
     <main>
-      <h1 class="blog-title">
-        Descubriendo el Mundo: Opiniones y Experiencias de Viaje
-      </h1>
-      <section>
+      <div class="wrapper">
+        <h1 class="blog-title">
+          Descubriendo el Mundo: Opiniones y Experiencias de Viaje
+        </h1>
+
         <div class="posts-container">
           <article class="post">
-            <h1>Jasmina</h1>
             <h1>Dominicana</h1>
             <div class="image-container">
-              <img src="dominicana.jpg" alt="República Dominicana" />
+              <a href="dominicana.html">
+                <img src="dominicana.jpg" alt="República Dominicana" />
+              </a>
               <div class="post-text">
                 <p class="text-preview">
                   Visitar República Dominicana te ofrece una experiencia
@@ -59,7 +83,9 @@
           <article class="post">
             <h1>Cuba</h1>
             <div class="image-container">
-              <img src="cuba.jfif" alt="Cuba" />
+              <a href="cuba.html">
+                <img src="cuba.jfif" alt="Cuba" />
+              </a>
               <div class="post-text">
                 <p class="text-preview">
                   Cuba merece una visita por su extraordinaria combinación de
@@ -86,7 +112,9 @@
           <article class="post">
             <h1>Bahamas</h1>
             <div class="image-container">
-              <img src="bahamas.jpg" alt="Bahamas" />
+              <a href="bahamas.html">
+                <img src="bahamas.jpg" alt="Bahamas" />
+              </a>
               <div class="post-text">
                 <p class="text-preview">
                   Visitar Bahamas es sumergirse en un auténtico paraíso
@@ -115,7 +143,9 @@
           <article class="post">
             <h1>Brasil</h1>
             <div class="image-container">
-              <img src="brasil.jpg" alt="Brasil" />
+              <a href="brasil.html">
+                <img src="brasil.jpg" alt="Brasil" />
+              </a>
               <div class="post-text">
                 <p class="text-preview">
                   Brasil te cautivará con su diversidad y energía incomparables.
@@ -145,7 +175,9 @@
           <article class="post">
             <h1>Aruba</h1>
             <div class="image-container">
-              <img src="aruba.jpg" alt="Aruba" />
+              <a href="aruba.html">
+                <img src="aruba.jpg" alt="Aruba" />
+              </a>
               <div class="post-text">
                 <p class="text-preview">
                   Aruba es un pequeño paraíso en el sur del Caribe que te
@@ -174,25 +206,29 @@
             </div>
           </article>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="social-icons">
-        <a href="#" class="social-icon">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="social-icon">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="social-icon">
+        <a
+          href="https://www.instagram.com/blassmm/"
+          class="social-icon"
+          target="_blank"
+        >
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" class="social-icon">
+        <a
+          href="https://github.com/blassmm"
+          class="social-icon"
+          target="_blank"
+        >
           <i class="fab fa-github"></i>
         </a>
       </div>
       <p>&copy; 2025 Blas Montanari</p>
     </footer>
     <script src="script-blog.js"></script>
+    <script src="navbar.js"></script>
+    <script src="audio.js"></script>
   </body>
 </html>

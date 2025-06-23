@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blas</title>
-    <link rel="stylesheet" href="linktree-styles.css" />
+    <link rel="stylesheet" href="linktree-restored.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,10 +13,13 @@
   </head>
 
   <body>
+    <audio id="clickSound">
+      <source src="/sounds/click-hd.mp3" type="audio/mpeg" />
+    </audio>
     <div class="profile-container">
       <img src="perfil.jpeg" alt="Foto de perfil" class="profile-image" />
       <h1 class="username">@blasmontanari</h1>
-      <p class="bio">Travel</p>
+      <p class="bio">Travel Blog</p>
     </div>
 
     <div class="links-container">
@@ -24,25 +27,19 @@
         <span class="link-text">Identikit</span>
       </a>
 
-      <a href="/blog.html" class="link-item">
+      <a href="blog.html" class="link-item">
         <span class="link-text">Blog</span>
       </a>
     </div>
 
     <div class="social-icons">
-      <a href="#" class="social-icon">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="#" class="social-icon">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#" class="social-icon">
+      <a href="https://www.instagram.com/blassmm/" class="social-icon" target="_blank">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="#" class="social-icon">
+      <a href="https://github.com/blassmm" class="social-icon" target="_blank">
         <i class="fab fa-github"></i>
       </a>
     </div>
-
   </body>
+  <script src="audio.js"></script>
 </html>

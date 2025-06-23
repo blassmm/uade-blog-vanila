@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Blog de Viajes</title>
+    <link rel="stylesheet" href="post-detail.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="contact-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <audio id="clickSound">
+      <source src="/sounds/click-hd.mp3" type="audio/mpeg" />
+    </audio>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" class="navbar-logo">
+            BLO<span class="blue">G</span>
+          </a>
+          <div class="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">Inicio</a>
+            </li>
+            <li class="navbar-item">
+              <a href="blog.html" class="navbar-link">Publicaciones</a>
+            </li>
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="overlay"></div>
+    </header>
+
+    <main class="post-container">
+      <div class="post-header">
+        <h1 class="post-title">Contacto</h1>
+      </div>
+
+      <div class="post-content">
+        <p>
+          ¿Tenes alguna pregunta sobre mis viajes o queres compartir tus
+          experiencias? Completa el formulario a continuación y me pondré en
+          contacto contigo lo antes posible.
+        </p>
+
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Enviar Mensaje</button>
+          </form>
+        </div>
+
+        <a href="blog.html" class="back-button">Volver al blog</a>
+      </div>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script src="audio.js"></script>
+  </body>
+</html>
