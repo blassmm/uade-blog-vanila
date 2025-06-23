@@ -1,0 +1,165 @@
+/* Estilos para las páginas de detalle de países */
+:root {
+  --primary-color: #35424a;
+  --accent-color: #03a3ff;
+  --text-color: #333;
+  --background-color: #f8f8f8;
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik/static/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik/static/Rubik-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik/static/Rubik-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik/static/Rubik-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin-top: 0;
+}
+
+/* Contenedor principal */
+.post-container {
+  max-width: 900px;
+  margin: 100px auto 50px;
+  padding: 0 20px;
+}
+
+/* Cabecera del post */
+.post-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.post-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.post-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+/* Imagen principal */
+.post-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del post */
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+}
+
+/* Botón de regreso */
+.back-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 25px;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all var(--transition-speed) ease;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.back-button:hover {
+  background-color: #0286cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .post-container {
+    margin-top: 80px;
+  }
+
+  .post-title {
+    font-size: 3rem;
+  }
+
+  .post-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-container {
+    margin-top: 70px;
+    padding: 0 15px;
+  }
+
+  .post-title {
+    font-size: 2.2rem;
+  }
+
+  .post-image {
+    height: 250px;
+    margin-bottom: 30px;
+  }
+
+  .post-content {
+    font-size: 1rem;
+  }
+}
