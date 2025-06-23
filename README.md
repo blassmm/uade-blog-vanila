@@ -19,8 +19,3 @@ Para clonar este repositorio con el submódulo, usa:
 ```
 git clone --recurse-submodules https://github.com/[tu-usuario]/[nombre-repositorio].git
 ```
-
-## Notas
-
-- Todas las rutas de archivos son relativas para funcionar correctamente en GitHub Pages
-- El archivo index.html es el punto de entrada principal
