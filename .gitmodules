@@ -1,0 +1,3 @@
+[submodule "identikit2"]
+	path = identikit2
+	url = https://github.com/blassmm/identikit2.git
