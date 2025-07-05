@@ -56,7 +56,7 @@
         </p>
 
         <div class="contact-form">
-          <form action="#" method="POST">
+          <form id="contactForm" action="#">
             <div class="form-group">
               <label for="name">Nombre</label>
               <input type="text" id="name" name="name" required />
@@ -79,6 +79,10 @@
 
             <button type="submit" class="submit-button">Enviar Mensaje</button>
           </form>
+          <div id="thanksMessage" class="thank-you-message" style="display: none;">
+            <p>¡Gracias por contactarme! Tu mensaje ha sido enviado correctamente.</p>
+            <p>Serás redirigido a la página de publicaciones en unos segundos...</p>
+          </div>
         </div>
 
         <a href="blog.html" class="back-button">Volver al blog</a>
@@ -87,5 +91,6 @@
 
     <script src="navbar.js"></script>
     <script src="audio.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
