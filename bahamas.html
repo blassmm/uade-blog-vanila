@@ -6,9 +6,14 @@
     <title>Bahamas - Destinos de Viaje</title>
     <link rel="stylesheet" href="post-detail.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="post-styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -34,6 +39,9 @@
               <a href="blog.html" class="navbar-link">Publicaciones</a>
             </li>
             <li class="navbar-item">
+              <a href="sobre-mi.html" class="navbar-link">Sobre Mi</a>
+            </li>
+            <li class="navbar-item">
               <a href="contact.html" class="navbar-link">Contacto</a>
             </li>
           </ul>
@@ -43,49 +51,136 @@
     </header>
 
     <main class="post-container">
-      <div class="post-header">
-        <h1 class="post-title">Bahamas</h1>
-      </div>
+      <div class="blog-grid">
+        <div class="post-main">
+          <div class="post-header">
+            <h1 class="post-title">Bahamas: El lugar de tus sueños</h1>
 
-      <img src="bahamas.jpg" alt="Bahamas" class="post-image" />
+            <div class="author-info">
+              <img src="perfil.jpeg" alt="Autor" class="author-avatar" />
+              <div>
+                <strong>Blas Montanari</strong>
+                <div>Blog starter</div>
+              </div>
+            </div>
 
-      <div class="post-content">
-        <p>
-          Visitar Bahamas es sumergirse en un auténtico paraíso terrenal. Sus
-          aguas cristalinas de tonos turquesas imposibles te invitarán a
-          explorar uno de los ecosistemas marinos más espectaculares del
-          planeta. La experiencia única de nadar con cerdos en Big Major Cay o
-          alimentar a las iguanas en las playas desiertas será inolvidable.
-        </p>
+            <div class="post-meta">
+              <span><i class="far fa-calendar"></i> 3 Junio, 2023</span>
+              <span><i class="far fa-clock"></i> 4 min de lectura</span>
+              <span><i class="far fa-comment"></i> 5 comentarios</span>
+            </div>
+          </div>
 
-        <p>
-          Sus más de 700 islas ofrecen tanto tranquilidad en calas apartadas
-          como el lujo de resorts en Nassau. El contraste entre la arena rosada
-          de Harbour Island y el intenso azul del océano creará postales que
-          guardarás para siempre en tu memoria.
-        </p>
+          <img src="bahamas.jpg" alt="Playas de Bahamas" class="post-image" />
 
-        <p>
-          Para los amantes del buceo y el snorkel, los arrecifes de coral de
-          Andros o el famoso Blue Hole son experiencias imprescindibles. La
-          biodiversidad marina te permitirá observar desde coloridos peces
-          tropicales hasta majestuosas mantarrayas.
-        </p>
+          <div class="post-content">
+            <p>
+              Visitar Bahamas es sumergirse en un auténtico paraíso terrenal.
+              Sus aguas cristalinas de tonos turquesas imposibles te invitarán a
+              explorar uno de los ecosistemas marinos más espectaculares del
+              planeta. La experiencia única de nadar con cerdos en Big Major Cay
+              o alimentar a las iguanas en las playas desiertas será
+              inolvidable.
+            </p>
 
-        <p>
-          La cultura bahamesa, con su música goombay y junkanoo, te contagiará
-          de alegría. Y no puedes dejar de probar especialidades locales como el
-          conch (caracol de mar) preparado de diversas formas o el refrescante
-          sky juice, una bebida a base de coco y ginebra.
-        </p>
+            <blockquote>
+              "En Bahamas, el cielo y el mar compiten por mostrar el azul más
+              perfecto que hayas visto jamás."
+            </blockquote>
 
-        <p>¡Un destino que supera cualquier expectativa!</p>
+            <p>
+              Sus más de 700 islas ofrecen tanto tranquilidad en calas apartadas
+              como el lujo de resorts en Nassau. El contraste entre la arena
+              rosada de Harbour Island y el intenso azul del océano creará
+              postales que guardarás para siempre en tu memoria.
+            </p>
 
-        <a href="blog.html" class="back-button">Volver al blog</a>
+            <h2>Un Paraíso para Buceadores</h2>
+            <p>
+              Para los amantes del buceo y el snorkel, los arrecifes de coral de
+              Andros o el famoso Blue Hole son experiencias imprescindibles. La
+              biodiversidad marina te permitirá observar desde coloridos peces
+              tropicales hasta majestuosas mantarrayas.
+            </p>
+
+            <p>
+              El Parque Nacional Marino de Exuma Cays es una de las reservas
+              marinas más impresionantes del Caribe. Con más de 365 islas e
+              islotes, ofrece aguas tan claras que los barcos parecen flotar en
+              el aire. Este santuario protegido es hogar de corales prístinos y
+              una abundante vida marina.
+            </p>
+
+            <h2>Cultura y Gastronomía</h2>
+            <p>
+              La cultura bahamesa, con su música goombay y junkanoo, te
+              contagiará de alegría. Y no puedes dejar de probar especialidades
+              locales como el conch (caracol de mar) preparado de diversas
+              formas o el refrescante sky juice, una bebida a base de coco y
+              ginebra.
+            </p>
+
+            <p>¡Un destino que supera cualquier expectativa!</p>
+
+            <div class="tags">
+              <a href="#" class="tag">Caribe</a>
+              <a href="#" class="tag">Playas</a>
+              <a href="#" class="tag">Buceo</a>
+              <a href="#" class="tag">Islas</a>
+              <a href="#" class="tag">Lujo</a>
+            </div>
+
+            <div class="post-navigation">
+              <a href="dominicana.html" class="nav-button prev">
+                <i class="fas fa-arrow-left"></i> Publicación anterior
+              </a>
+              <a href="cuba.html" class="nav-button next">
+                Publicación siguiente <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-sidebar">
+          <div class="related-posts">
+            <h3>Publicaciones relacionadas</h3>
+            <div class="related-post-item">
+              <a href="aruba.html"
+                >Aruba: El Paraíso Caribeño que Debes Visitar</a
+              >
+              <div>15 Mayo, 2023</div>
+            </div>
+            <div class="related-post-item">
+              <a href="cuba.html">Cuba: Historia, música y playas caribeñas</a>
+              <div>27 Marzo, 2023</div>
+            </div>
+            <div class="related-post-item">
+              <a href="dominicana.html"
+                >República Dominicana: Playas y cultura</a
+              >
+              <div>10 Marzo, 2023</div>
+            </div>
+          </div>
+
+          <div class="newsletter">
+            <h3>¡Suscríbete a nuestro boletín!</h3>
+            <p>Recibe las últimas actualizaciones sobre destinos de viaje.</p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Tu correo electrónico"
+                required
+              />
+              <button type="submit">Suscribirse</button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
 
+    <link rel="stylesheet" href="transition-shader.css" />
     <script src="navbar.js"></script>
     <script src="audio.js"></script>
+    <script src="page-transition.js"></script>
   </body>
 </html>

@@ -15,12 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Asegurar que el texto se muestre correctamente al hacer hover en móviles
   const imageContainers = document.querySelectorAll(".image-container");
 
   imageContainers.forEach((container) => {
     container.addEventListener("touchstart", function () {
-      // Prevenir efecto hover en móviles para permitir el clic en el botón
       const postText = this.querySelector(".post-text");
       if (postText) {
         postText.style.transform = "translateY(0)";
@@ -28,10 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Animaciones con GSAP
   gsap.registerPlugin(ScrollTrigger);
 
-  // Animación para el título
   gsap.from(".blog-title", {
     opacity: 0,
     y: -30,
@@ -39,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out",
   });
 
-  // Animación para los posts
   gsap.from(".post", {
     opacity: 0,
     y: 50,

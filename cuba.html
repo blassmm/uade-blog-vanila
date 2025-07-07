@@ -6,9 +6,14 @@
     <title>Cuba - Destinos de Viaje</title>
     <link rel="stylesheet" href="post-detail.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="post-styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -34,6 +39,9 @@
               <a href="blog.html" class="navbar-link">Publicaciones</a>
             </li>
             <li class="navbar-item">
+              <a href="sobre-mi.html" class="navbar-link">Sobre Mi</a>
+            </li>
+            <li class="navbar-item">
               <a href="contact.html" class="navbar-link">Contacto</a>
             </li>
           </ul>
@@ -43,50 +51,137 @@
     </header>
 
     <main class="post-container">
-      <div class="post-header">
-        <h1 class="post-title">Cuba</h1>
-      </div>
+      <div class="blog-grid">
+        <div class="post-main">
+          <div class="post-header">
+            <h1 class="post-title">Cuba: Historia, Música y Tradición</h1>
 
-      <img src="cuba.jfif" alt="Cuba" class="post-image" />
+            <div class="author-info">
+              <img src="perfil.jpeg" alt="Autor" class="author-avatar" />
+              <div>
+                <strong>Blas Montanari</strong>
+                <div>Blog starter</div>
+              </div>
+            </div>
 
-      <div class="post-content">
-        <p>
-          Cuba merece una visita por su extraordinaria combinación de historia,
-          cultura y belleza natural. La Habana te transportará al pasado con sus
-          coloridos autos clásicos y su arquitectura colonial perfectamente
-          preservada. La música cubana, siempre presente en sus calles, te
-          invitará a bailar al ritmo de la salsa y el son.
-        </p>
+            <div class="post-meta">
+              <span><i class="far fa-calendar"></i> 27 Marzo, 2023</span>
+              <span><i class="far fa-clock"></i> 4 min de lectura</span>
+              <span><i class="far fa-comment"></i> 7 comentarios</span>
+            </div>
+          </div>
 
-        <p>
-          Sus playas vírgenes como Varadero ofrecen un paraíso de arenas
-          blancas. La amabilidad de los cubanos, su sistema único y su rica
-          historia revolucionaria te proporcionarán una perspectiva diferente
-          del mundo.
-        </p>
+          <img src="cuba.jfif" alt="La Habana, Cuba" class="post-image" />
 
-        <p>
-          Trinidad, una ciudad detenida en el tiempo, te cautivará con sus
-          calles empedradas y casas coloridas. En Viñales podrás admirar los
-          famosos mogotes y aprender sobre el cultivo del tabaco. Y no puedes
-          dejar de visitar Santiago de Cuba, cuna de la revolución y del son
-          cubano.
-        </p>
+          <div class="post-content">
+            <p>
+              Cuba merece una visita por su extraordinaria combinación de
+              historia, cultura y belleza natural. La Habana te transportará al
+              pasado con sus coloridos autos clásicos y su arquitectura colonial
+              perfectamente preservada. La música cubana, siempre presente en
+              sus calles, te invitará a bailar al ritmo de la salsa y el son.
+            </p>
 
-        <p>
-          La gastronomía cubana, con platos como el ropa vieja, los moros y
-          cristianos o el delicioso congrí, te permitirá disfrutar de sabores
-          auténticos. Y por supuesto, no puedes irte sin probar un mojito o un
-          daiquirí en alguno de sus bares históricos.
-        </p>
+            <blockquote>
+              "Cuba no se entiende, se vive. Es un país donde el tiempo se
+              detiene y la música nunca para."
+            </blockquote>
 
-        <p>¡Una isla que te cambiará para siempre!</p>
+            <p>
+              Sus playas vírgenes como Varadero ofrecen un paraíso de arenas
+              blancas. La amabilidad de los cubanos, su sistema único y su rica
+              historia revolucionaria te proporcionarán una perspectiva
+              diferente del mundo.
+            </p>
 
-        <a href="blog.html" class="back-button">Volver al blog</a>
+            <h2>Ciudades con Historia</h2>
+            <p>
+              Trinidad, una ciudad detenida en el tiempo, te cautivará con sus
+              calles empedradas y casas coloridas. En Viñales podrás admirar los
+              famosos mogotes y aprender sobre el cultivo del tabaco. Y no
+              puedes dejar de visitar Santiago de Cuba, cuna de la revolución y
+              del son cubano.
+            </p>
+
+            <h2>Sabores Auténticos</h2>
+            <p>
+              La gastronomía cubana, con platos como el ropa vieja, los moros y
+              cristianos o el delicioso congrí, te permitirá disfrutar de
+              sabores auténticos. Y por supuesto, no puedes irte sin probar un
+              mojito o un daiquirí en alguno de sus bares históricos como el
+              famoso Floridita, donde Ernest Hemingway solía pasar largas horas.
+            </p>
+
+            <p>
+              Los cubanos son conocidos por su calidez y hospitalidad. A pesar
+              de las dificultades económicas, siempre están dispuestos a
+              compartir lo poco o mucho que tienen con los visitantes, haciendo
+              que la experiencia sea aún más enriquecedora.
+            </p>
+
+            <p>¡Una isla que te cambiará para siempre!</p>
+
+            <div class="tags">
+              <a href="#" class="tag">Caribe</a>
+              <a href="#" class="tag">Historia</a>
+              <a href="#" class="tag">Música</a>
+              <a href="#" class="tag">Playas</a>
+              <a href="#" class="tag">Cultura</a>
+            </div>
+
+            <div class="post-navigation">
+              <a href="bahamas.html" class="nav-button prev">
+                <i class="fas fa-arrow-left"></i> Publicación anterior
+              </a>
+              <a href="brasil.html" class="nav-button next">
+                Publicación siguiente <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-sidebar">
+          <div class="related-posts">
+            <h3>Publicaciones relacionadas</h3>
+            <div class="related-post-item">
+              <a href="aruba.html"
+                >Aruba: El Paraíso Caribeño que Debes Visitar</a
+              >
+              <div>15 Mayo, 2023</div>
+            </div>
+            <div class="related-post-item">
+              <a href="brasil.html"
+                >Brasil: Diversidad, Cultura y Playas Espectaculares</a
+              >
+              <div>20 Abril, 2023</div>
+            </div>
+            <div class="related-post-item">
+              <a href="dominicana.html"
+                >República Dominicana: Playas y cultura</a
+              >
+              <div>10 Marzo, 2023</div>
+            </div>
+          </div>
+
+          <div class="newsletter">
+            <h3>¡Suscríbete a nuestro boletín!</h3>
+            <p>Recibe las últimas actualizaciones sobre destinos de viaje.</p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Tu correo electrónico"
+                required
+              />
+              <button type="submit">Suscribirse</button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
 
+    <link rel="stylesheet" href="transition-shader.css" />
     <script src="navbar.js"></script>
     <script src="audio.js"></script>
+    <script src="page-transition.js"></script>
   </body>
 </html>

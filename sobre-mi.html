@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mi - Blog</title>
+    <link rel="stylesheet" href="sobre-mi.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio id="clickSound">
+      <source src="sounds/click-hd.mp3" type="audio/mpeg" />
+    </audio>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" class="navbar-logo">
+            BLO<span class="blue">G</span>
+          </a>
+          <div class="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">Inicio</a>
+            </li>
+            <li class="navbar-item">
+              <a href="blog.html" class="navbar-link">Publicaciones</a>
+            </li>
+            <li class="navbar-item">
+              <a href="sobre-mi.html" class="navbar-link">Sobre Mi</a>
+            </li>
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="overlay"></div>
+    </header>
+
+    <main class="about-container">
+      <div class="about-grid">
+        <div class="profile-section">
+          <div class="profile-image-container">
+            <img src="perfil.jpeg" alt="Foto de perfil" class="profile-image" />
+          </div>
+          <h1 class="profile-name">Blas Montanari</h1>
+          <p class="profile-title">Viajero y Blogger</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/blassmm/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/blassmm" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h2 class="section-title">Sobre Mi</h2>
+          <p>
+            ¡Hola! Soy Blas, un apasionado viajero y creador de contenido. Mi
+            amor por explorar nuevos destinos me ha llevado a recorrer diversos
+            rincones del mundo, documentando mis experiencias para compartirlas
+            contigo.
+          </p>
+
+          <p>
+            Mi objetivo es inspirar a otros a descubrir la belleza de nuestro
+            planeta, ofreciendo consejos prácticos, recomendaciones sinceras y
+            relatos personales que capturen la esencia de cada lugar que visito.
+          </p>
+
+          <h2 class="section-title">Mi Filosofía de Viaje</h2>
+          <p>
+            Creo firmemente que viajar es una de las formas más enriquecedoras
+            de educación. Cada destino nos enseña algo nuevo sobre el mundo y
+            sobre nosotros mismos. Mi enfoque al viajar combina la exploración
+            de sitios turísticos populares con el descubrimiento de joyas
+            ocultas que revelan la auténtica cultura local.
+          </p>
+
+          <h2 class="section-title">Destinos Favoritos</h2>
+          <div class="favorites-grid">
+            <div class="favorite-item">
+              <h3>Aruba</h3>
+              <p>Por sus playas paradisíacas y su ambiente relajado</p>
+            </div>
+            <div class="favorite-item">
+              <h3>Brasil</h3>
+              <p>Por su diversidad cultural y paisajes impresionantes</p>
+            </div>
+            <div class="favorite-item">
+              <h3>República Dominicana</h3>
+              <p>Por su hospitalidad y belleza natural</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <link rel="stylesheet" href="transition-shader.css" />
+    <script src="navbar.js"></script>
+    <script src="audio.js"></script>
+    <script src="page-transition.js"></script>
+  </body>
+</html>

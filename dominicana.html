@@ -6,9 +6,14 @@
     <title>República Dominicana - Destinos de Viaje</title>
     <link rel="stylesheet" href="post-detail.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="post-styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -34,6 +39,9 @@
               <a href="blog.html" class="navbar-link">Publicaciones</a>
             </li>
             <li class="navbar-item">
+              <a href="sobre-mi.html" class="navbar-link">Sobre Mi</a>
+            </li>
+            <li class="navbar-item">
               <a href="contact.html" class="navbar-link">Contacto</a>
             </li>
           </ul>
@@ -43,51 +51,150 @@
     </header>
 
     <main class="post-container">
-      <div class="post-header">
-        <h1 class="post-title">República Dominicana</h1>
-      </div>
+      <div class="blog-grid">
+        <div class="post-main">
+          <div class="post-header">
+            <h1 class="post-title">
+              República Dominicana: Playas, Historia y Cultura
+            </h1>
 
-      <img src="dominicana.jpg" alt="República Dominicana" class="post-image" />
+            <div class="author-info">
+              <img src="perfil.jpeg" alt="Autor" class="author-avatar" />
+              <div>
+                <strong>Blas Montanari</strong>
+                <div>Blog starter</div>
+              </div>
+            </div>
 
-      <div class="post-content">
-        <p>
-          Visitar República Dominicana te ofrece una experiencia caribeña
-          inolvidable. Sus playas de arena blanca y aguas turquesas en Punta
-          Cana y Bávaro te brindarán el descanso perfecto. La calidez de su
-          gente te hará sentir bienvenido desde el primer momento.
-        </p>
+            <div class="post-meta">
+              <span><i class="far fa-calendar"></i> 10 Marzo, 2023</span>
+              <span><i class="far fa-clock"></i> 5 min de lectura</span>
+              <span><i class="far fa-comment"></i> 9 comentarios</span>
+            </div>
+          </div>
 
-        <p>
-          Podrás descubrir su rica historia colonial en Santo Domingo, la ciudad
-          más antigua de América, y deleitarte con su gastronomía local llena de
-          sabores tropicales. Los amantes de la naturaleza encontrarán paraísos
-          como Los Haitises o el Valle del Tetero.
-        </p>
+          <img
+            src="dominicana.jpg"
+            alt="Playas de República Dominicana"
+            class="post-image"
+          />
 
-        <p>
-          La cultura dominicana es vibrante y alegre, con música que invita al
-          baile como el merengue y la bachata. Sus coloridos mercados locales te
-          permitirán conocer la artesanía tradicional y llevar un recuerdo
-          auténtico de tu viaje.
-        </p>
+          <div class="post-content">
+            <p>
+              Visitar República Dominicana te ofrece una experiencia caribeña
+              inolvidable. Sus playas de arena blanca y aguas turquesas en Punta
+              Cana y Bávaro te brindarán el descanso perfecto. La calidez de su
+              gente te hará sentir bienvenido desde el primer momento.
+            </p>
 
-        <p>
-          Para los aventureros, actividades como el buceo, snorkel o excursiones
-          a cascadas como El Limón ofrecen experiencias emocionantes. Y no
-          puedes dejar de visitar Samaná, donde entre enero y marzo podrás
-          avistar ballenas jorobadas en su migración anual.
-        </p>
+            <blockquote>
+              "República Dominicana es un mosaico de colores, sabores y ritmos
+              que te envuelven en una experiencia sensorial única."
+            </blockquote>
 
-        <p>
-          ¡Una isla que cautiva todos los sentidos y te dejará con ganas de
-          volver!
-        </p>
+            <p>
+              Podrás descubrir su rica historia colonial en Santo Domingo, la
+              ciudad más antigua de América, y deleitarte con su gastronomía
+              local llena de sabores tropicales. Los amantes de la naturaleza
+              encontrarán paraísos como Los Haitises o el Valle del Tetero.
+            </p>
 
-        <a href="blog.html" class="back-button">Volver al blog</a>
+            <h2>El Encanto Colonial de Santo Domingo</h2>
+            <p>
+              La Zona Colonial de Santo Domingo, declarada Patrimonio de la
+              Humanidad por la UNESCO, te transportará a los tiempos de los
+              conquistadores españoles. Podrás recorrer la primera catedral, el
+              primer hospital y la primera universidad de América. El Alcázar de
+              Colón, antigua residencia de Diego Colón (hijo de Cristóbal
+              Colón), alberga hoy un fascinante museo que muestra cómo vivía la
+              aristocracia española en el Nuevo Mundo.
+            </p>
+
+            <p>
+              La cultura dominicana es vibrante y alegre, con música que invita
+              al baile como el merengue y la bachata. Sus coloridos mercados
+              locales te permitirán conocer la artesanía tradicional y llevar un
+              recuerdo auténtico de tu viaje.
+            </p>
+
+            <h2>Aventuras Naturales</h2>
+            <p>
+              Para los aventureros, actividades como el buceo, snorkel o
+              excursiones a cascadas como El Limón ofrecen experiencias
+              emocionantes. Y no puedes dejar de visitar Samaná, donde entre
+              enero y marzo podrás avistar ballenas jorobadas en su migración
+              anual.
+            </p>
+
+            <p>
+              El Parque Nacional del Este es otro tesoro natural que alberga más
+              de 500 especies de flora y 300 de fauna. Incluye la Isla Saona,
+              con sus playas paradisíacas y piscinas naturales donde podrás
+              relajarte en aguas cristalinas rodeado de estrellas de mar.
+            </p>
+
+            <p>
+              ¡Una isla que cautiva todos los sentidos y te dejará con ganas de
+              volver!
+            </p>
+
+            <div class="tags">
+              <a href="#" class="tag">Caribe</a>
+              <a href="#" class="tag">Playas</a>
+              <a href="#" class="tag">Historia</a>
+              <a href="#" class="tag">Cultura</a>
+              <a href="#" class="tag">Naturaleza</a>
+            </div>
+
+            <div class="post-navigation">
+              <a href="blog.html" class="nav-button prev">
+                <i class="fas fa-arrow-left"></i> Volver al blog
+              </a>
+              <a href="bahamas.html" class="nav-button next">
+                Publicación siguiente <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-sidebar">
+          <div class="related-posts">
+            <h3>Publicaciones relacionadas</h3>
+            <div class="related-post-item">
+              <a href="cuba.html">Cuba: Historia, música y playas caribeñas</a>
+              <div>27 Marzo, 2023</div>
+            </div>
+            <div class="related-post-item">
+              <a href="bahamas.html">Bahamas: El lugar de tus sueños</a>
+              <div>3 Junio, 2023</div>
+            </div>
+            <div class="related-post-item">
+              <a href="aruba.html"
+                >Aruba: El Paraíso Caribeño que Debes Visitar</a
+              >
+              <div>15 Mayo, 2023</div>
+            </div>
+          </div>
+
+          <div class="newsletter">
+            <h3>¡Suscríbete a nuestro boletín!</h3>
+            <p>Recibe las últimas actualizaciones sobre destinos de viaje.</p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Tu correo electrónico"
+                required
+              />
+              <button type="submit">Suscribirse</button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
 
+    <link rel="stylesheet" href="transition-shader.css" />
     <script src="navbar.js"></script>
     <script src="audio.js"></script>
+    <script src="page-transition.js"></script>
   </body>
 </html>

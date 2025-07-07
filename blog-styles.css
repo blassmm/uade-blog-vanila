@@ -166,7 +166,6 @@ nav ul li a:hover {
   }
 }
 
-/* Mantenemos la container query pero aseguramos que los estilos sean los mismos */
 @container nav-container (width < 600px) {
   .hamburger-menu {
     display: flex;
@@ -411,7 +410,6 @@ footer::before {
   background-color: #03a3ff;
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
   .blog-title {
     font-size: 2rem;
@@ -450,7 +448,6 @@ footer::before {
   }
 }
 
-/* Asegurar que ningún enlace tenga subrayado */
 a {
   text-decoration: none;
 }
