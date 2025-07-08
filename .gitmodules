@@ -1,3 +1,6 @@
 [submodule "identikit2"]
 	path = identikit2
 	url = https://github.com/blassmm/identikit2.git
+[submodule "portfolio_new"]
+	path = portfolio_new
+	url = https://github.com/blassmm/portfolioUade.git
